@@ -1,0 +1,65 @@
+section.about-section
+  .out-wrapper.about-section__out-wrapper
+    .wrapper
+      .about-section__container
+        h2.about-section__title.font-w-bold.font-s-54
+          | «БУБОЧКА» — франшиза,
+          br
+          | которую вы искали
+        .about-section__sub-title
+          .about-section__sub-title-year.font-w-bold 2021
+          .font-w-semi-bold.font-s-20
+            | Наша команда работает с 2021 года и сегодня мы уже уверены, 
+            br.no-br
+            | в своей экспертности и готовы предложить партнёрам 
+            br.no-br
+            | по‑настоящему эффективную бизнес-модель
+        .about-section__box.font-w-medium
+          .about-section__block-1
+            | Мы предоставляем клиентам востребованные 
+            br.no-br
+            | услуги и товары и уделяем большое внимание 
+            br.no-br
+            | комфорту животных, работая на качество 
+            br.no-br
+            | и безопасность процедур
+          //- .about-section__block-2
+          //-   | Мы предоставляем клиентам востребованные 
+          //-   br.no-br
+          //-   | услуги и товары и уделяем большое внимание 
+          //-   br.no-br
+          //-   | комфорту животных, работая на качество 
+          //-   br.no-br
+          //-   | и безопасность процедур
+          .about-section__block-3
+            | Наша клиентская база насчитывает 
+            br.no-br
+            span.font-w-bold более 2 000 человек 
+            | и мы не готовы 
+            br.no-br
+            | останавливаться на достигнутом, поэтому 
+            br.no-br
+            | идем в новые масштабы и ищем партнеров
+        .about-section__text.font-w-bold
+          | Если вы хотите развиваться в этой 
+          br.no-br
+          | нише и у вас много бизнес-идей 
+          br.no-br
+          | для реализации, мы ждем вас в нашей 
+          br.no-br
+          | команде и будем рады поделиться своим 
+          br.no-br
+          | опытом!
+        .about-section__bottom-text.font-w-bold.font-s-24
+          | Получите презентацию 
+          br.no-br
+          | франшизы
+        form.about-section__form(data-feedback-form)
+          input(type="text" name="honeyfield" class="honeypot" style="display:none")
+          input.input(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
+          input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+          button.btn(type="submit") Получить
+          .about-section__agree-wrapper
+            include ../components/agree.pug
+        img.about-section__img(src="images/about-section-img.png" loading="lazy" width="1184" height="1080" alt="image")
+        img.about-section__icon-arrow(src="images/about-section-icon-arrow.png" loading="lazy" width="160" height="119" alt="icon")

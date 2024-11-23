@@ -1,0 +1,69 @@
+section.reasons-section
+  .wrapper
+    .reasons-section__container
+      .reasons-section__box
+        h2.reasons-section__title.font-w-bold.font-s-54
+          span.color-pink 3 причины 
+          br
+          | стать нашим 
+          br.no-br
+          | партнером
+        .swiper-bullet
+          .reasons-section__cards.swiper-wrapper
+            .reasons-section__card.swiper-slide
+              .reasons-section__card-header
+                .reasons-section__card-title.font-w-bold Готовая концепция
+                .reasons-section__card-num.font-w-bold 01
+              .reasons-section__card-text.font-w-medium
+                | Вы откроете груминг-салон с уже готовым 
+                br.no-br
+                | позиционированием на рынке и будете 
+                br.no-br
+                | предлагать проработанный спектр услуг 
+                br.no-br
+                | и ассортимент товаров, которые пользуются 
+                br.no-br
+                | спросом.
+            .reasons-section__card.swiper-slide
+              .reasons-section__card-header
+                .reasons-section__card-title.font-w-bold Бизнес-модель
+                .reasons-section__card-num.font-w-bold 02
+              .reasons-section__card-text.font-w-medium
+                | Мы предоставим вам все необходимые данные 
+                br.no-br
+                | для успешного старта, готовый план запуска 
+                br.no-br
+                | салона за 2 месяца и поможем автоматизировать 
+                br.no-br
+                | все процессы бизнеса.
+            .reasons-section__card.swiper-slide
+              .reasons-section__card-header
+                .reasons-section__card-title.font-w-bold Опытные партнеры
+                .reasons-section__card-num.font-w-bold 03
+              .reasons-section__card-text.font-w-medium
+                | Мы ведём бизнес уже с 2021 года и смогли 
+                br.no-br
+                | полностью погрузиться в работу ниши, поэтому 
+                br.no-br
+                | передадим вам все наши знания по формированию 
+                br.no-br
+                | команды, привлечению клиентов и другим 
+                br.no-br
+                | процессам.
+          .bullet-pagination
+      .reasons-section__bottom
+        img.reasons-section__bottom-img-left(src="images/reasons-section-bottom-img-left.png" loading="lazy" width="152" height="152" alt="image")
+        img.reasons-section__bottom-img-right(src="images/reasons-section-bottom-img-right.png" loading="lazy" width="140" height="140" alt="image")
+        .reasons-section__bottom-title.font-w-bold.font-s-28
+          | Будем рады ответить на любые 
+          br
+          | вопросы о работе франшизы
+        form.reasons-section__form(data-feedback-form)
+          textarea.input.input--textarea(type="text" name="answer" autocomplete="off" placeholder="Ваш вопрос")
+          input(type="text" name="honeyfield" class="honeypot" style="display:none")
+          input.input(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
+          input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+          button.btn(type="submit") Задать вопрос
+        .reasons-section__agree-wrapper
+          include ../components/agree.pug
+      img.reasons-section__img(src="images/reasons-section-img.png" loading="lazy" width="1193" height="1284" alt="image")

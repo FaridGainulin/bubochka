@@ -1,0 +1,42 @@
+section.finances-section
+  .out-wrapper.finances-section__out-wrapper
+    .wrapper
+      .finances-section__container
+        img.finances-section__icon(src="images/finances-section-icon.png" loading="lazy" width="141" height="176" alt="icon")
+        h2.finances-section__title.font-w-bold.font-s-54
+          | Франшиза 
+          span.color-white в цифрах
+        .swiper-bullet
+          .finances-section__cards.swiper-wrapper
+            .finances-section__card.swiper-slide
+              .finances-section__card-title.font-w-bold.font-s-34 с 1-го месяца
+              .font-w-medium.font-s-18 вы начнете <br> получать прибыль
+            .finances-section__card.swiper-slide
+              .finances-section__card-title.font-w-bold.font-s-34 от 2 000 рублей
+              .font-w-medium.font-s-18 средний чек <br> одного клиента
+            .finances-section__card.swiper-slide
+              .finances-section__card-title.font-w-bold.font-s-34 от 12 услуг
+              .font-w-medium.font-s-18 будет оказываться <br> ежедневно
+            .finances-section__card.swiper-slide
+              .finances-section__card-title.font-w-bold.font-s-34 688 000 рублей
+              .font-w-medium.font-s-18 средняя ежемесячная <br> выручка
+            .finances-section__card.swiper-slide
+              .finances-section__card-title.font-w-bold.font-s-34 33,1%
+              .font-w-medium.font-s-18 рентабельность <br> по чистой прибыли
+            .finances-section__card.swiper-slide
+              .finances-section__card-title.font-w-bold.font-s-34 228 000 рублей
+              .font-w-medium.font-s-18 средняя ежемесячная <br> чистая прибыль
+          .bullet-pagination
+        .finances-section__bottom
+          .finances-section__bottom-title.font-w-bold.font-s-28
+            | Узнайте, какие инвестиции 
+            br
+            | потребуются для старта бизнеса
+          .finances-section__bottom-text.font-w-medium.font-s-18 Получите финансовую модель франшизы
+          form.finances-section__form(data-feedback-form)
+            input(type="text" name="honeyfield" class="honeypot" style="display:none")
+            input.input(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
+            input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+            button.btn(type="submit") Получить
+          .finances-section__agree-wrapper
+            include ../components/agree.pug

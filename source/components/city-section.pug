@@ -1,0 +1,25 @@
+section.city-section
+  .out-wrapper.city-section__out-wrapper
+    .wrapper
+      .city-section__container
+        img.city-section__icon(src="images/city-section-icon.png" loading="lazy" width="325" height="184" alt="icon")
+        h2.city-section__title.font-w-bold.font-s-48.text-up
+          | Станьте партнером 
+          br
+          | франшизы «БУБОЧКА»
+        .city-section__sub-title.font-w-bold.font-s-30
+          | и зарабатывайте 
+          br
+          | от 228 000 ₽  ежемесячно
+        .city-section__text.font-w-regular.font-s-18
+          | Проверьте, свободен ли ваш город 
+          br
+          | для работы с нами
+        form.city-section__form(data-feedback-form)
+          input(type="text" name="honeyfield" class="honeypot" style="display:none")
+          input.input(type="text" name="city" autocomplete="off" placeholder="Ваш город")
+          input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+          button.btn(type="submit") Проверить
+          .city-section__agree-wrapper
+            include ../components/agree.pug
+        img.city-section__img(src="images/city-section-img.png" loading="lazy" width="1194" height="1228" alt="image")
