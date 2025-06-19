@@ -58,12 +58,13 @@ section.reasons-section
           | Будем рады ответить на любые 
           br
           | вопросы о работе франшизы
-        form.reasons-section__form(data-feedback-form)
-          textarea.input.input--textarea(type="text" name="answer" autocomplete="off" placeholder="Ваш вопрос")
-          input(type="text" name="honeyfield" class="honeypot" style="display:none")
-          input.input(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
-          input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
-          button.btn(type="submit") Задать вопрос
-        .reasons-section__agree-wrapper
-          include ../components/agree.pug
+        form(data-feedback-form)
+          .reasons-section__form
+            textarea.input.input--textarea(type="text" name="answer" autocomplete="off" placeholder="Ваш вопрос")
+            input(type="text" name="honeyfield" class="honeypot" style="display:none")
+            input.input(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
+            input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+            button.btn(type="submit") Задать вопрос
+          .reasons-section__agree-wrapper
+            include ../components/agree.pug
       img.reasons-section__img(src="images/reasons-section-img.png" loading="lazy" width="1193" height="1284" alt="image")

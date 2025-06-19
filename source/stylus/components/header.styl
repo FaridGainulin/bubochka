@@ -14,7 +14,7 @@
   &__brand
     display: none
     +above($breakpoints.sm)
-      flex-basis: 40%
+      flex-basis: 35%
       display: flex
       flex-direction: column
       gap: 5px
@@ -29,33 +29,28 @@
     +above($breakpoints.xxl)
       width 204px
 
-  &__connection
-    display: flex
-    align-items: center
-    justify-content flex-end
-    gap: 6px
+  &__btn-wrapper
     +above($breakpoints.sm)
-      flex-basis: 40%
-      gap: 8px;
-    +above($breakpoints.md)
-      gap: 9px;
-    +above($breakpoints.xxl)
-      gap: 10px
+      display: flex
+      justify-content flex-end
+      flex-basis: 35%
 
-  &__connection-icon
-    display: none
+  &__brand-mobile
+    position relative
+    z-index 1
+    text-align: center
+    color: #fff
+    padding 8px 0
+    margin-bottom 15px
     +above($breakpoints.sm)
-      display: block
-      width 12px
-      height: 12px
-    +above($breakpoints.md)
-      width 13px
-      height: 13px
-    +above($breakpoints.xxl)
-      width 14px
-      height: 14px
-
-  // &__call-me
-  //   display: none
-  //   +above($breakpoints.sm)
-  //     display: flex
+      display: none
+    &:after
+      content: ""
+      position: absolute
+      z-index -1
+      background-color $color-pink
+      width 100vw
+      height: 100%
+      top: 0
+      left: 50%
+      transform: translateX(-50%)

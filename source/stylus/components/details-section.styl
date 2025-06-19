@@ -43,24 +43,27 @@
     align-items: flex-start
     justify-content start
     gap: 10px
-    padding 15px 5px 15px 10px
+    padding 15px 5px 5px 10px
+    height: 90px
     +above($breakpoints.sm)
       gap: 15px
       flex-direction: column
       border-radius: 15px
       width 235px !important
-      padding 15px 5px 15px 15px
+      padding 10px 5px 5px 15px
+      height: 110px
     +above($breakpoints.md)
       gap: 18px
       border-radius: 20px
       width 308px !important
-      padding 20px 5px 20px 20px
+      padding 15px 5px 5px 20px
+      height: 145px
     +above($breakpoints.xxl)
       gap: 22px
       border-radius: 30px
       width 380px !important
       height: 168px
-      padding 26px 5px 26px 26px
+      padding 15px 5px 5px 26px
 
   &__card-icon
     width 20px
@@ -78,6 +81,7 @@
   &__img-mobile
     width 308px
     height: auto
+    margin-top 10px
     +above($breakpoints.sm)
       display: none
 
@@ -103,7 +107,7 @@
   &__text
     position: absolute
     z-index -1
-    top: 202px;
+    top: 213px;
     left: 20px;
     font-size: 10px
     line-height: 110%
@@ -127,7 +131,7 @@
     z-index: -1
     width: 186px;
     height: auto;
-    top: 178px;
+    top: 190px;
     left: 0;
     +above($breakpoints.sm)
       width: 280px;

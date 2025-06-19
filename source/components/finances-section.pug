@@ -21,7 +21,7 @@ section.finances-section
               .finances-section__card-title.font-w-bold.font-s-34 688 000 рублей
               .font-w-medium.font-s-18 средняя ежемесячная <br> выручка
             .finances-section__card.swiper-slide
-              .finances-section__card-title.font-w-bold.font-s-34 33,1%
+              .finances-section__card-title.font-w-bold.font-s-34 35,6%
               .font-w-medium.font-s-18 рентабельность <br> по чистой прибыли
             .finances-section__card.swiper-slide
               .finances-section__card-title.font-w-bold.font-s-34 228 000 рублей
@@ -33,10 +33,11 @@ section.finances-section
             br
             | потребуются для старта бизнеса
           .finances-section__bottom-text.font-w-medium.font-s-18 Получите финансовую модель франшизы
-          form.finances-section__form(data-feedback-form)
-            input(type="text" name="honeyfield" class="honeypot" style="display:none")
-            input.input(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
-            input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
-            button.btn(type="submit") Получить
-          .finances-section__agree-wrapper
-            include ../components/agree.pug
+          form(data-feedback-form)
+            .finances-section__form
+              input(type="text" name="honeyfield" class="honeypot" style="display:none")
+              input.input(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
+              input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+              button.btn(type="submit") Получить
+            .finances-section__agree-wrapper
+              include ../components/agree.pug
